@@ -2,6 +2,7 @@ package com.example.dao;
 
 import com.example.model.Product;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,6 +13,7 @@ public class ProductDao {
     public List<Product> getProductList(){
         Product prod = new Product();
 
+        prod.setProdId("P123");
         prod.setProdName("box");
         prod.setProdCategory("misc");
         prod.setProdCondition("perfect");
@@ -25,5 +27,15 @@ public class ProductDao {
         productList.add(prod);
 
         return productList;
+    }
+
+    public Product getProductById(String productId) throws IOException {
+        for (Product product: getProductList()) {
+            if(product.getProdId().equals(productId)) {
+                return product;
+            }
+        }
+
+        throw new IOException("No product found.");
     }
 }

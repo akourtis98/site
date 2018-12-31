@@ -13,10 +13,10 @@
     <title>Carousel Template for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="<c:url value="/resources/css/bootstrap.min.css" />" rel="stylesheet">
+    <link href="<c:url value="/WEB-INF/resources/css/bootstrap.min.css" />" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="<c:url value="/resources/css/carousel.css" />" rel="stylesheet">
+    <link href="<c:url value="/WEB-INF/resources/css/carousel.css" />" rel="stylesheet">
 </head>
 <!-- NAVBAR
 ================================================== -->
@@ -155,8 +155,8 @@
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script>window.jQuery ||
-document.write('<script src="<c:url value="/resources/js/jquery-1.11.3.min.js" />"><\/script>')</script>
-<script src="<c:url value="/resources/js/bootstrap.min.js" />"></script>
+document.write('<script src="<c:url value="/WEB-INF/resources/js/jquery-1.11.3.min.js" />"><\/script>')</script>
+<script src="<c:url value="/WEB-INF/resources/js/bootstrap.min.js" />"></script>
 
 </body>
 </html>

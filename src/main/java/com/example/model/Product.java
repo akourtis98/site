@@ -2,6 +2,7 @@ package com.example.model;
 
 public class Product {
 
+    private String prodId;
     private String prodName;
     private String prodCategory;
     private String prodDescription;
@@ -10,6 +11,14 @@ public class Product {
     private String prodStatus;
     private int prodUnitInStock;
     private String prodManufacturer;
+
+    public String getProdId() {
+        return prodId;
+    }
+
+    public void setProdId(String prodId) {
+        this.prodId = prodId;
+    }
 
     public String getProdName() {
         return prodName;
